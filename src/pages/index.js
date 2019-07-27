@@ -34,9 +34,10 @@ const Hero = () => {
             line-height: 1.5;
             margin: 0;
             max-width: ${rhythm(15)};
+            font-size: 30px;
           `}
         >
-          Your blog says the things you want to say.
+          Hi, I'm Deepak. I help people understand modern day software development.
         </h1>
       </Container>
       <div
