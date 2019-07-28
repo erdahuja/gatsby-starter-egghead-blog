@@ -171,7 +171,7 @@ function useFetch({url, body}) {
 function Subscribe({style, tags = [], header = 'Join the Newsletter'}) {
   const [values, setValues] = React.useState()
   const {pending, response, error} = useFetch({
-    url: `https://app.convertkit.com/forms/827139/subscriptions`,
+    url: `https://gmail.us3.list-manage.com/subscribe/post?u=388459fe7ecdb1e0a04487b19&id=83070fa2f1`,
     body: values,
   })
 
@@ -255,6 +255,14 @@ function Subscribe({style, tags = [], header = 'Join the Newsletter'}) {
                 {!pending && 'Subscribe'}
                 {pending && 'Submitting...'}
               </button>
+              <p
+                css={css`
+                  font-size: small;
+                  opacity: 0.8;
+                  padding-top: 20px;
+                  font-style: oblique;
+                  `}
+              >It's safe and I don't spam ever!</p>
             </StyledForm>
           )}
         />
